@@ -3,34 +3,60 @@
 </head>
 
 <body>
-	<div align="center">
-		<h1> todos </h1>
-		<table cols="2">
-			<tr>
-				<td> <input type="button"></td>
-				<td > <input name ="todos_input" maxlength = "50" placeholder="What need to be done?"> </td>
-			</tr>
+	<div  class="todos-header">
+		<h1 class="todos-title"> todos </h1>
+	</div>
 
-			<tr>
-				<td> <input type="checkbox"></td>
-				<td width="500px"> <h3> HTML </h3></td>
-			</tr>
+	<div  class="todos-main">
+		<div class="todos-add">
+			<button class="todo-add_select-all" aria-label="Mark done all">Mark done all</button>
+			<input class="todo-add_input" aria-label="Todo input field" maxlength = "100" placeholder="What need to be done?" tabindex="1"> </td>
+			<button class="todo-add_delete-all" aria-label="Delete all">delete all</button>
+		</div>
 
-			<tr>
-				<td> <input type="checkbox"></td>
-				<td> <h3> CSS </h3></td>
-			</tr>
+		<div class="todos-list">
+			<div class="todo-item__ready">
+				<input class="todo-item_ready-mark" type="checkbox" checked="checked" aria-label="Mark as not done"  tabindex="3">
+				<textarea class="todo-item_text" maxlength="50" cols="25"  rows="1" tabindex="2">HTML</textarea>
+				<button class="todo-item_remove" aria-label="Delete"  tabindex="4">delete</button>
+			</div>
 
-			<tr>
-				<td> <input type="checkbox"></td>
-				<td> <h3> JS </h3></td>
-			</tr>
+			<div class="todo-item">
+				<input type="checkbox" aria-label="Mark done">
+				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1" >CSS</textarea>
+				<button aria-label="Delete">delete</button>
+			</div>
 
-			<tr>
-				<td> <input type="checkbox"></td>
-				<td> <h3> JS tools </h3></td>
-			</tr>
-		</table>
+			<div class="todo-item">
+				<input type="checkbox" aria-label="Mark done">
+				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1">JS</textarea>
+				<button aria-label="Delete">delete</button>
+			</div>
 
+			<div class="todo-item">
+				<input type="checkbox" aria-label="Mark done">
+				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1" >JS Tools</textarea>
+				<button aria-label="Delete">delete</button>
+			</div>
+		</div>
+		<div class="todos-actions-bar">
+			<div class="todos-actions-bar_counter">
+				<div aria-label="Count of todos left">3 todos left</div>
+			</div>
+			<div  class="todos-actions-bar_filters" aria-label="Filters">
+				<button class="todos-filter __active" data-filter="all" aria-label="Filter: show all">
+					Show all
+				</button>
+				<button class="todos-filter" data-filter="done" aria-label="Filter: show all not done">
+					Show all not done
+				</button>
+				<button class="todos-filter" data-filter="not done" aria-label="Filter: show all done">
+					Show all done
+				</button>
+			</div>
+			<button class="todos-actions-bar_delete-all-done" aria-label="Delete all done">
+				Delete all done
+			</button>
+		</div>
 	</div>
 </body>
