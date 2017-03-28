@@ -1,0 +1,9 @@
+@font-face{
+	font-family: Light;
+	src: url(fonts_files/WorkSans-ExtraLight.otf);
+}
+
+@font-face{
+	font-family: Thin;
+	src: url(fonts_files/WorkSans-Hairline.otf);
+}

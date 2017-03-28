@@ -1,0 +1,16 @@
+.todos-add_delete-all{
+	position: relative;
+	left: 8px;
+	background: url("../../../icons/close.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	padding: 0;
+	opacity: 0.5;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.todos-add_delete-all:hover{
+	opacity: 1;
+}
