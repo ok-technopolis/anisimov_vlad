@@ -5,6 +5,8 @@
 	min-height: 50px;
 	position: relative;
 	width: 80%;
-	font-family: Thin;
-	font-size: 24pt;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: italic;
+	font-weight: 100;
+	font-size: 30px;
 }

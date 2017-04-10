@@ -8,14 +8,15 @@ body {
 }
 
 .todos-title{
-	font-family: Thin;
-	font-size: 100pt;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: italic;
+	font-weight: 100;
+	font-size: 120px;
 	color: #ebdfdf;
 	margin-bottom: -20px;
 }
 
 .todos-main{
-	height: 400px;
 	max-height: 80%;
 	width: 560px;
 	max-width: 80%;

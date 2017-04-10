@@ -2,7 +2,9 @@
 	line-height: 40px;
 	min-height: 40px;
 	background-color: white;
-	font-family: Light;
-	font-size: 10pt;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: italic;
+	font-weight: 100;
+	font-size: 15px;
 	box-shadow: 0 2px 3px #cecece;
 }
