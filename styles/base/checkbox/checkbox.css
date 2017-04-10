@@ -1,0 +1,27 @@
+.todo-item_mark, .todo-item_mark-checkbox {
+	padding: 0;
+	background-color: transparent;
+	border: 1px solid #e6e6e6;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+}
+
+.todo-item_mark {
+	position: relative;
+	opacity: 0;
+	z-index: 2;
+}
+
+.todo-item_mark-checkbox {
+	position: absolute;
+	margin-left: -41px;
+	margin-top: 14px;
+	z-index: 1;
+}
+
+.todo-item_mark:checked + .todo-item_mark-checkbox {
+	border-color: #5dc2af;
+	background: url("../../../icons/completed.png") no-repeat;
+	background-position: center center;
+}

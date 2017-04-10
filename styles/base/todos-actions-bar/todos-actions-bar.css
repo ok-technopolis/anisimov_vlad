@@ -1,0 +1,8 @@
+.todos-actions-bar{
+	line-height: 40px;
+	min-height: 40px;
+	background-color: white;
+	font-family: Light;
+	font-size: 10pt;
+	box-shadow: 0 2px 3px #cecece;
+}

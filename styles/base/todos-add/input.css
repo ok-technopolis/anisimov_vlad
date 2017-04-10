@@ -1,0 +1,10 @@
+.todos-add_input{
+	border: none;
+	left: 8px;
+	top: 5px;
+	min-height: 50px;
+	position: relative;
+	width: 80%;
+	font-family: Thin;
+	font-size: 24pt;
+}

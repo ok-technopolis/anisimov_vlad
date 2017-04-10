@@ -1,0 +1,11 @@
+input::-webkit-input-placeholder { 
+	font-family: Thin;
+	font-style: italic;
+	font-size: 24pt;
+}
+
+input::-moz-placeholder { 
+	font-family: Thin;
+	font-style: italic;
+	font-size: 24pt;
+}
