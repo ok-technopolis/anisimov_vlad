@@ -1,9 +1,0 @@
-.todo-item{
-	background-color: white;
-	min-height: 60px;
-	border-bottom: 1px solid #e6e6e6;
-}
-
-.todo-item:hover{
-	background-color: #fafafa;
-}
