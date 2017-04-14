@@ -1,44 +1,65 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <head>
 	<title> TODOS manager</title>
+	<link rel="stylesheet"  href="styles/base/base.css">
+	<link rel="stylesheet"  href="styles/base/button/button.css">
+	<link rel="stylesheet"  href="styles/base/checkbox/checkbox.css">
+	<link rel="stylesheet"  href="styles/base/fonts/fonts.css">
+	<link rel="stylesheet"  href="styles/base/placeholder/placeholder.css">
+	<link rel="stylesheet"  href="styles/base/textarea/textarea.css">
+	<link rel="stylesheet"  href="styles/base/todos-actions-bar/counter.css">
+	<link rel="stylesheet"  href="styles/base/todos-actions-bar/delete-all-done.css">
+	<link rel="stylesheet"  href="styles/base/todos-actions-bar/filters.css">
+	<link rel="stylesheet"  href="styles/base/todos-actions-bar/todos-actions-bar.css">
+	<link rel="stylesheet"  href="styles/base/todos-add/todos-add.css">
+	<link rel="stylesheet"  href="styles/base/todos-add/delete-all.css">
+	<link rel="stylesheet"  href="styles/base/todos-add/input.css">
+	<link rel="stylesheet"  href="styles/base/todos-add/select-all.css">
+	<link rel="stylesheet"  href="styles/base/todo-item/todo-item.css">
+	<link rel="stylesheet"  href="styles/base/todo-item/remove.css">
+	<link rel="stylesheet"  href="styles/base/todos-list/todos-list.css">
+	<link rel="stylesheet"  href="styles/base/todos-steps/todos-step1.css">
+	<link rel="stylesheet"  href="styles/base/todos-steps/todos-step2.css">
 </head>
 
 <body>
 	<div  class="todos-header">
-		<h1 class="todos-title"> todos </h1>
+		<div class="todos-title"> todos </div>
 	</div>
 
 	<div  class="todos-main">
 		<div class="todos-add">
-			<button class="todo-add_select-all" aria-label="Mark done all">Mark done all</button>
-			<input class="todo-add_input" aria-label="Todo input field" maxlength = "100" placeholder="What need to be done?" tabindex="1"> </td>
-			<button class="todo-add_delete-all" aria-label="Delete all">delete all</button>
+			<button class="todos-add_select-all" aria-label="Mark done all"></button>
+			<input class="todos-add_input" aria-label="Todo input field" maxlength = "100"  placeholder="What needs to be done?" >
+			<button class="todos-add_delete-all" aria-label="Delete all"></button>
 		</div>
 
 		<div class="todos-list">
-			<div class="todo-item__ready">
-				<input class="todo-item_ready-mark" type="checkbox" checked="checked" aria-label="Mark as not done"  tabindex="3">
-				<textarea class="todo-item_text" maxlength="50" cols="25"  rows="1" tabindex="2">HTML</textarea>
-				<button class="todo-item_remove" aria-label="Delete"  tabindex="4">delete</button>
+			<div class="todo-item">
+				<input class="todo-item_mark" type="checkbox"  aria-label="Mark done">
+				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
+				<textarea class="todo-item_text" maxlength="100">HTML</textarea>
+				<button class="todo-item_remove" aria-label="Delete" ></button>
 			</div>
 
 			<div class="todo-item">
-				<input type="checkbox" aria-label="Mark done">
-				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1" >CSS</textarea>
-				<button aria-label="Delete">delete</button>
+				<input class ="todo-item_mark" type="checkbox" aria-label="Mark done">
+				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
+				<textarea class="todo-item_text" maxlength="100" >CSS</textarea>
+				<button  class ="todo-item_remove" aria-label="Delete"></button>
 			</div>
 
 			<div class="todo-item">
-				<input type="checkbox" aria-label="Mark done">
-				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1">JS</textarea>
-				<button aria-label="Delete">delete</button>
+				<input  class ="todo-item_mark" type="checkbox" aria-label="Mark done">
+				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
+				<textarea class="todo-item_text" maxlength="100">JS</textarea>
+				<button class ="todo-item_remove" aria-label="Delete"></button>
 			</div>
 
 			<div class="todo-item">
-				<input type="checkbox" aria-label="Mark done">
-				<textarea class="todo-item_text" maxlength="50" cols="25" rows="1" >JS Tools</textarea>
-				<button aria-label="Delete">delete</button>
+				<input  class ="todo-item_mark" type="checkbox" aria-label="Mark done">
+				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
+				<textarea class="todo-item_text" maxlength="100" >JS Tools</textarea>
+				<button class ="todo-item_remove" aria-label="Delete"></button>
 			</div>
 		</div>
 		<div class="todos-actions-bar">
@@ -46,25 +67,23 @@
 				<div aria-label="Count of todos left">3 todos left</div>
 			</div>
 			<div  class="todos-actions-bar_filters" aria-label="Filters">
-				<button class="todos-filter __active" data-filter="all" aria-label="Filter: show all">
-					Show all
+				<button autofocus class="todos-filter " data-filter="all" aria-label="Filter: show all">
+					All
 				</button>
 				<button class="todos-filter" data-filter="done" aria-label="Filter: show all not done">
-					Show all not done
+					Active
 				</button>
 				<button class="todos-filter" data-filter="not done" aria-label="Filter: show all done">
-					Show all done
+					Completed
 				</button>
 			</div>
+			
 			<button class="todos-actions-bar_delete-all-done" aria-label="Delete all done">
-				Delete all done
+				Clear All completed
 			</button>
+			
 		</div>
+		<div class="todos-step1"></div>
+		<div class="todos-step2"></div>
 	</div>
 </body>
-=======
-"# anisimov_vlad" 
->>>>>>> parent of 5a25fd7... Merge pull request #1 from ok-technopolis/dz_1
-=======
-"# anisimov_vlad" 
->>>>>>> parent of 5a25fd7... Merge pull request #1 from ok-technopolis/dz_1

@@ -1,0 +1,8 @@
+.todos-step1{
+	margin: auto;
+	height: 5px;
+	background: white;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 3px 5px #cecece;
+	width: 99%;
+}

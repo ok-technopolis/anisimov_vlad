@@ -1,0 +1,14 @@
+.todo-item_remove{
+	position: relative;
+	bottom: 20px;
+	background: url("../../../icons/close.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	padding: 0;
+	opacity: 0.5;
+	background-color: transparent;
+}
+
+.todo-item_remove:hover{
+	opacity: 1;
+}

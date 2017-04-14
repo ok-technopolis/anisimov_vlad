@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	text-align: center;
+}
+
+.todos-title{
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: italic;
+	font-weight: 100;
+	font-size: 120px;
+	color: #ebdfdf;
+	margin-bottom: -20px;
+}
+
+.todos-main{
+	max-height: 80%;
+	width: 560px;
+	max-width: 80%;
+	margin: auto;
+}
