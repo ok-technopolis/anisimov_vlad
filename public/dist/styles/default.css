@@ -32,9 +32,24 @@ body {
   background-color: #fafafa;
 }
 
-.todo-item_remove {
+textarea {
+  border: none;
+  background: transparent;
   position: relative;
-  bottom: 20px;
+  width: 80%;
+  resize: none;
+  top: 5px;
+  min-height: 50px;
+  height: 50px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.todo-item_remove {
+  float: right;
+  margin-top: 21px;
+  margin-right: 21px;
   width: 18px;
   height: 18px;
   padding: 0;
@@ -46,14 +61,6 @@ body {
   opacity: 1;
 }
 
-.todos-add_select-all {
-  width: 24px;
-  height: 12px;
-  padding: 0;
-  background: transparent url("../images/icons/select-all.png") no-repeat;
-  cursor: pointer;
-}
-
 .todos-add {
   background-color: white;
   min-height: 60px;
@@ -62,8 +69,9 @@ body {
 }
 
 .todos-add_delete-all {
-  position: relative;
-  left: 8px;
+  float: right;
+  margin-top: 21px;
+  margin-right: 21px;
   width: 18px;
   height: 18px;
   padding: 0;
@@ -190,19 +198,5 @@ button:hover {
 .todo-item_mark:checked + .todo-item_mark-checkbox {
   border-color: #5dc2af;
   background: url("../images/icons/completed.png") no-repeat center center;
-}
-
-textarea {
-  border: none;
-  background: transparent;
-  position: relative;
-  width: 80%;
-  resize: none;
-  top: 5px;
-  min-height: 50px;
-  height: 50px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 100;
-  font-size: 30px;
 }
 /*# sourceMappingURL=default.css.map */
