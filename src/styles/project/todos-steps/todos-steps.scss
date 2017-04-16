@@ -1,0 +1,19 @@
+@import "../../config/globals";
+
+.todos-step1{
+  margin: auto;
+  height: 5px;
+  background: $c-white;
+  border: solid 1px $c-border;
+  box-shadow: 0 3px 5px $c-shadow;
+  width: 99%;
+}
+
+.todos-step2{
+  margin: auto;
+  height: 4px;
+  background: $c-white;
+  border: solid 1px $c-border;
+  box-shadow: 0 3px 5px $c-shadow;
+  width: 98%;
+}

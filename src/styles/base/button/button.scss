@@ -1,0 +1,12 @@
+@import "../../config/globals";
+
+button {
+	border: 1px solid $c-white;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 100;
+	background-color: $c-white;
+}
+
+button:hover{
+	border: 1px solid $c-border;
+}

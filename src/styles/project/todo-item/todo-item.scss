@@ -1,0 +1,32 @@
+@import "../../config/globals";
+
+.todo-item{
+	background-color: $c-white;
+	min-height: 60px;
+	border-bottom: 1px solid $c-border;
+}
+
+.todo-item:hover{
+	background-color: $c-todo-item-hover;
+}
+	.todo-item_remove{
+		position: relative;
+		bottom: 20px;
+		width: 18px;
+		height: 18px;
+		padding: 0;
+		opacity: 0.5;
+		background: transparent url("../../../images/icons/close.png") no-repeat;
+	}
+
+	.todo-item_remove:hover{
+		opacity: 1;
+	}
+
+	.todos-add_select-all {
+		width: 24px;
+		height: 12px;
+		padding: 0;
+		background: transparent url("../../../images/icons/select-all.png") no-repeat;
+		cursor: pointer;
+	}

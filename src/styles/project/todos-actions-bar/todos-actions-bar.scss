@@ -1,0 +1,25 @@
+@import "../../config/globals";
+
+.todos-actions-bar{
+	line-height: 40px;
+	min-height: 40px;
+	background-color: $c-white;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 100;
+	font-size: $fs_normal;
+	box-shadow: 0 2px 3px $c-shadow;
+}
+
+    .todos-actions-bar_filters {
+        display: inline-block;
+    }
+
+    .todos-actions-bar_delete-all-done {
+        cursor: pointer;
+    }
+
+    .todos-actions-bar_counter{
+        display: inline-block;
+        margin-left: 10px;
+        float: left;
+    }

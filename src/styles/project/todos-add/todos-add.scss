@@ -1,0 +1,45 @@
+@import "../../config/globals";
+
+.todos-add {
+  background-color: $c-white;
+  min-height: 60px;
+  border-bottom: 1px solid $c-border;
+  box-shadow: 0 3px 5px $c-shadow;
+}
+
+  .todos-add_delete-all {
+    position: relative;
+    left: 8px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    opacity: 0.5;
+    background: transparent url("../../../images/icons/close.png") no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+
+  .todos-add_delete-all:hover {
+    opacity: 1;
+  }
+
+  .todos-add_input {
+    border: none;
+    left: 8px;
+    top: 5px;
+    min-height: 50px;
+    position: relative;
+    width: 80%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 100;
+    font-size: $fs-large;
+    @include placeholder('Helvetica Neue');
+  }
+
+  .todos-add_select-all {
+    width: 24px;
+    height: 12px;
+    padding: 0;
+    background: transparent url("../../../images/icons/select-all.png") no-repeat;
+    cursor: pointer;
+  }
