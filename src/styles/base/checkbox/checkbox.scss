@@ -9,16 +9,9 @@
 	height: $h-checkbox;
 }
 
-.todo-item_mark {
-	position: relative;
-	opacity: 0;
-	z-index: 2;
-}
-
 .todo-item_mark-checkbox {
 	position: absolute;
-	margin-left: -41px;
-	margin-top: 14px;
+	float: left;
 	z-index: 1;
 }
 

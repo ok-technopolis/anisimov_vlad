@@ -8,18 +8,42 @@ $h-remove: 18px;
   background-color: $c-white;
   min-height: 60px;
   border-bottom: 1px solid $c-border;
+  display: flex;
+  align-items: center;
 }
 
 .todo-item:hover {
   background-color: $c-todo-item-hover;
 }
 
+.todo-item:hover .todo-item_remove {
+  opacity: 1;
+}
+
+  .todo-item_mark {
+    float: left;
+    opacity: 0;
+    z-index: 2;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid $c-border;
+    border-radius: 50%;
+    width: $w-checkbox;
+    height: $h-checkbox;
+
+    order: 1;
+    align-self: center;
+  }
+
+  .todo-item_text {
+    flex: 1 0;
+    order: 10;
+  }
+
   textarea {
     border: none;
     background: transparent;
-    position: relative;
     resize: none;
-    top: 5px;
     min-height: 50px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 100;
@@ -33,10 +57,13 @@ $h-remove: 18px;
     width: $w-remove;
     height: $h-remove;
     padding: 0;
-    opacity: 0.5;
+    opacity: 0.2;
     background: transparent url("../../../images/icons/close.png") no-repeat;
-  }
 
-  .todo-item_remove:hover {
-    opacity: 1;
+    -moz-transition: opacity 0.5s ;
+    -o-transition: opacity 0.5s ;
+    -webkit-transition: opacity 0.5s ;
+
+    order: 26;
+    align-self: center;
   }

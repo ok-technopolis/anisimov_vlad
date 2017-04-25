@@ -5,6 +5,9 @@
   min-height: 60px;
   border-bottom: 1px solid $c-border;
   box-shadow: 0 3px 5px $c-shadow;
+
+  display: flex;
+  align-items: center;
 }
 
   .todos-add_delete-all {
@@ -14,30 +17,40 @@
     width: 18px;
     height: 18px;
     padding: 0;
-    opacity: 0.5;
+    opacity: 0.2;
     background: transparent url("../../../images/icons/close.png") no-repeat;
     border: none;
     cursor: pointer;
+
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+
+    order: 25;
+    align-self: center;
   }
 
-  .todos-add_delete-all:hover {
+  .todos-add:hover .todos-add_delete-all {
     opacity: 1;
   }
 
   .todos-add_input {
     border: none;
-    left: 8px;
-    top: 5px;
     min-height: 50px;
     position: relative;
+    margin-left: 7px;
     width: 80%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 100;
     font-size: $fs-large;
     @include placeholder('Helvetica Neue');
+
+    flex: 1 0;
+    order: 10;
   }
 
   .todos-add_select-all {
+    margin-left: 7px;
     width: 24px;
     height: 12px;
     padding: 0;
