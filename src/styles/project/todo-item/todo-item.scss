@@ -1,12 +1,8 @@
 @import "../../config/globals";
 
-$w-remove: 18px;
-$h-remove: 18px;
-
-
 .todo-item {
   background-color: $c-white;
-  min-height: 60px;
+  min-height: $min-h_item;
   border-bottom: 1px solid $c-border;
   display: flex;
   align-items: center;
@@ -44,25 +40,23 @@ $h-remove: 18px;
     border: none;
     background: transparent;
     resize: none;
-    min-height: 50px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-height: $min-h_textarea;
+    @include priority-font('Helvetica Neue');
     font-weight: 100;
     font-size: $fs-large;
   }
 
   .todo-item_remove {
     float: right;
-    margin-top: 21px;
-    margin-right: 21px;
+    margin-top: ($min-h_item - $h-remove)/2;
+    margin-right: ($min-h_item - $w-remove)/2;
     width: $w-remove;
     height: $h-remove;
     padding: 0;
     opacity: 0.2;
     background: transparent url("../../../images/icons/close.png") no-repeat;
 
-    -moz-transition: opacity 0.5s ;
-    -o-transition: opacity 0.5s ;
-    -webkit-transition: opacity 0.5s ;
+    @include transition(opacity, 0.8s);
 
     order: 26;
     align-self: center;

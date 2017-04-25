@@ -4,7 +4,7 @@
 	line-height: 40px;
 	min-height: 40px;
 	background-color: $c-white;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+    @include priority-font('Helvetica Neue');
 	font-weight: 100;
 	font-size: $fs_normal;
 	box-shadow: 0 2px 3px $c-shadow;

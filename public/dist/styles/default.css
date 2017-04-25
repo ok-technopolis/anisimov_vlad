@@ -103,9 +103,9 @@ textarea {
   background: transparent url("../images/icons/close.png") no-repeat;
   border: none;
   cursor: pointer;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  -webkit-transition: opacity 5s;
   order: 25;
   align-self: center;
 }
@@ -128,12 +128,12 @@ textarea {
 }
 
 .todos-add_input input::-webkit-input-placeholder {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-weight: 100;
 }
 
 .todos-add_input input::-moz-placeholder {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-weight: 100;
 }
 
