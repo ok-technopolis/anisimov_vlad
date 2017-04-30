@@ -2,11 +2,14 @@ counter = 0;
 counterElem = document.getElementById("counter");
 counterElem.innerHTML = counter + " todos left";
 
-function addItem() {
-    var textInput = document.getElementsByTagName("INPUT")[0];
-    var text = textInput.value;
-    setupItem(text);
-}
+window.addEventListener("keydown",function addItem(e) {
+    if (e.keyCode == 13) {
+        var textInput = document.getElementsByTagName("INPUT")[0];
+        var text = textInput.value;
+        setupItem(text);
+        return false;
+    }
+});
 
 function setupItem(text) {
     counter++;
@@ -32,9 +35,10 @@ function createItem(text) {
 function removeItem(item) {
     var remove = item.getElementsByTagName('BUTTON')[0];
 
-    remove.onclick = function() {
+    remove.onclick = function () {
         item.parentNode.removeChild(item);
         counter--;
         counterElem.innerHTML = counter + " todos left";
     };
 }
+
