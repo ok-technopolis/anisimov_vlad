@@ -10,43 +10,19 @@
 
 	<div  class="todos-main">
 		<div class="todos-add">
-			<button class="todos-add_select-all" aria-label="Mark done all"></button>
+			<button class="todos-add_select-all" aria-label="Mark done all"
+					onclick="setupItem('hoho')"></button>
 			<input class="todos-add_input" aria-label="Todo input field" maxlength = "100"  placeholder="What needs to be done?" >
 			<button class="todos-add_delete-all" aria-label="Delete all"></button>
 		</div>
 
-		<div class="todos-list">
-			<div class="todo-item">
-				<input class="todo-item_mark" type="checkbox"  aria-label="Mark done">
-				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
-				<textarea class="todo-item_text" maxlength="100">HTML</textarea>
-				<button class="todo-item_remove" aria-label="Delete" ></button>
-			</div>
-
-			<div class="todo-item">
-				<input class ="todo-item_mark" type="checkbox" aria-label="Mark done">
-				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
-				<textarea class="todo-item_text" maxlength="100" >CSS</textarea>
-				<button  class ="todo-item_remove" aria-label="Delete"></button>
-			</div>
-
-			<div class="todo-item">
-				<input  class ="todo-item_mark" type="checkbox" aria-label="Mark done">
-				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
-				<textarea class="todo-item_text" maxlength="100">JS</textarea>
-				<button class ="todo-item_remove" aria-label="Delete"></button>
-			</div>
-
-			<div class="todo-item">
-				<input  class ="todo-item_mark" type="checkbox" aria-label="Mark done">
-				<label class="todo-item_mark-checkbox" aria-hidden="true"></label>
-				<textarea class="todo-item_text" maxlength="100" >JS Tools</textarea>
-				<button class ="todo-item_remove" aria-label="Delete"></button>
-			</div>
+		<div class="todos-list" id="list">
+            <!-- добавляются js-ом -->
 		</div>
+
 		<div class="todos-actions-bar">
 			<div class="todos-actions-bar_counter">
-				<div aria-label="Count of todos left">3 todos left</div>
+				<div aria-label="Count of todos left" id="counter"> </div> <!-- изменяется js -->
 			</div>
 			<div  class="todos-actions-bar_filters" aria-label="Filters">
 				<button autofocus class="todos-filter " data-filter="all" aria-label="Filter: show all">
