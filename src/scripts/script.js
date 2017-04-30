@@ -3,6 +3,7 @@ counterElem = document.getElementById("counter");
 counterElem.innerHTML = counter + " todos left";
 
 var inputField = document.getElementById("textInput");
+
 inputField.addEventListener("keydown",function addItem(e) {
     if (e.keyCode != 13) {
     } else {
@@ -20,6 +21,7 @@ function setupItem(text) {
     var todos_list = document.getElementById("list");
     removeItem(item);
     todos_list.appendChild(item);
+    item.setAttribute("todo-item", "todo-item")
 }
 
 function createItem(text) {
@@ -44,3 +46,15 @@ function removeItem(item) {
     };
 }
 
+function removeAll() {
+    var remove = document.getElementById("todos-add").getElementsByTagName('BUTTON')[1];
+    var list = document.getElementById("list");
+    var count = counter;
+    remove.onclick = function () {
+        for (var i = 0; i < count; i++){
+            list.removeChild(list.firstElementChild);
+            counter--;
+        }
+        counterElem.innerHTML = counter + " todos left";
+    };
+}

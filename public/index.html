@@ -9,11 +9,11 @@
 	</div>
 
 	<div  class="todos-main">
-		<div class="todos-add">
-			<button class="todos-add_select-all" aria-label="Mark done all"
-					onclick="addItem()"></button>
+		<div id = "todos-add" class="todos-add">
+			<button class="todos-add_select-all" aria-label="Mark done all"></button>
 			<input id="textInput" class="todos-add_input" aria-label="Todo input field" maxlength = "100"  placeholder="What needs to be done?" >
-			<button class="todos-add_delete-all" aria-label="Delete all"></button>
+			<button class="todos-add_delete-all" aria-label="Delete all"
+                    onclick="removeAll()"></button>
 		</div>
 
 		<div class="todos-list" id="list">
