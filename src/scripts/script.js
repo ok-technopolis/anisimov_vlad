@@ -1,3 +1,22 @@
+counter = 0;
+counterElem = document.getElementById("counter");
+counterElem.innerHTML = counter + " todos left";
+
+function addItem() {
+    var textInput = document.getElementsByTagName("INPUT")[0];
+    var text = textInput.value;
+    setupItem(text);
+}
+
+function setupItem(text) {
+    counter++;
+    counterElem.innerHTML = counter + " todos left";
+    var item = createItem(text);
+    var todos_list = document.getElementById("list");
+    removeItem(item);
+    todos_list.appendChild(item);
+}
+
 function createItem(text) {
     var container = document.createElement('todo-item');
 
@@ -8,18 +27,6 @@ function createItem(text) {
         <button class ="todo-item_remove" aria-label="Delete"></button>\
         </div>';
     return container.firstChild;
-}
-
-counter = 0;
-counterElem = document.getElementById("counter");
-
-function setupItem(text) {
-    counter++;
-    counterElem.innerHTML = counter + " todos left";
-    var item = createItem(text);
-    var todos_list = document.getElementById("list");
-    removeItem(item);
-    todos_list.appendChild(item);
 }
 
 function removeItem(item) {
