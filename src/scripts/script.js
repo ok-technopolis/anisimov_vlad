@@ -2,8 +2,10 @@ counter = 0;
 counterElem = document.getElementById("counter");
 counterElem.innerHTML = counter + " todos left";
 
-window.addEventListener("keydown",function addItem(e) {
-    if (e.keyCode == 13) {
+var inputField = document.getElementById("textInput");
+inputField.addEventListener("keydown",function addItem(e) {
+    if (e.keyCode != 13) {
+    } else {
         var textInput = document.getElementsByTagName("INPUT")[0];
         var text = textInput.value;
         setupItem(text);
