@@ -21,7 +21,7 @@ function setupItem(text) {
     var todos_list = document.getElementById("list");
     removeItem(item);
     todos_list.appendChild(item);
-    item.setAttribute("todo-item", "todo-item")
+    item.setAttribute("todo-item", "todo-item");
 }
 
 function createItem(text) {
@@ -49,12 +49,11 @@ function removeItem(item) {
 function removeAll() {
     var remove = document.getElementById("todos-add").getElementsByTagName('BUTTON')[1];
     var list = document.getElementById("list");
-    var count = counter;
     remove.onclick = function () {
-        for (var i = 0; i < count; i++){
+        for (var i = 0; i < counter; i++){
             list.removeChild(list.firstElementChild);
-            counter--;
         }
+        counter = 0;
         counterElem.innerHTML = counter + " todos left";
     };
 }
