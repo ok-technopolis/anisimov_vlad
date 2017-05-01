@@ -19,8 +19,8 @@
   .todo-item_mark {
     float: left;
     opacity: 0;
-    z-index: 2;
     padding: 0;
+    z-index: 1; /* нужно для отрисовки чекбокса */
     background-color: transparent;
     border: 1px solid $c-border;
     border-radius: 50%;
@@ -41,9 +41,10 @@
     background: transparent;
     resize: none;
     min-height: $min-h_textarea;
-    @include priority-font('Helvetica Neue');
-    font-weight: 100;
-    font-size: $fs-large;
+    @include priority-font() {
+      font-weight: 100;
+      font-size: $fs-large;
+    }
   }
 
   .todo-item_remove {

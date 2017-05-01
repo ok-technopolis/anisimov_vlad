@@ -9,17 +9,3 @@ body {
   text-align: center;
 }
 
-.todos-title{
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 100;
-  font-size: $fs_title;
-  color: $c-title;
-  margin-bottom: -20px;
-}
-
-.todos-main{
-  max-height: 80%;
-  width: $w-main;
-  max-width: 80%;
-  margin: auto;
-}

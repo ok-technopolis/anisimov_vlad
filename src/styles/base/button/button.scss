@@ -2,8 +2,9 @@
 
 button {
 	border: none;
-	@include priority-font('Helvetica Neue');
-	font-weight: 100;
+	@include priority-font(){
+		font-weight: 100;
+	};
 	background-color: $c-white;
 }
 

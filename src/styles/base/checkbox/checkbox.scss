@@ -12,7 +12,6 @@
 .todo-item_mark-checkbox {
 	position: absolute;
 	float: left;
-	z-index: 1;
 }
 
 .todo-item_mark:checked + .todo-item_mark-checkbox {

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
 }
@@ -5,21 +7,6 @@
 body {
   background-color: #f5f5f5;
   text-align: center;
-}
-
-.todos-title {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 100;
-  font-size: 120px;
-  color: #ebdfdf;
-  margin-bottom: -20px;
-}
-
-.todos-main {
-  max-height: 80%;
-  width: 560px;
-  max-width: 80%;
-  margin: auto;
 }
 
 .todo-item {
@@ -41,8 +28,9 @@ body {
 .todo-item_mark {
   float: left;
   opacity: 0;
-  z-index: 2;
   padding: 0;
+  z-index: 1;
+  /* нужно для отрисовки чекбокса */
   background-color: transparent;
   border: 1px solid #e6e6e6;
   border-radius: 50%;
@@ -62,7 +50,7 @@ textarea {
   background: transparent;
   resize: none;
   min-height: 50px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
@@ -76,9 +64,9 @@ textarea {
   padding: 0;
   opacity: 0.2;
   background: transparent url("../images/icons/close.png") no-repeat;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
   order: 26;
   align-self: center;
 }
@@ -88,8 +76,6 @@ textarea {
   min-height: 60px;
   border-bottom: 1px solid #e6e6e6;
   box-shadow: 0 3px 5px #cecece;
-  display: flex;
-  align-items: center;
 }
 
 .todos-add_delete-all {
@@ -103,11 +89,9 @@ textarea {
   background: transparent url("../images/icons/close.png") no-repeat;
   border: none;
   cursor: pointer;
-  -moz-transition: opacity 5s;
-  -o-transition: opacity 5s;
-  -webkit-transition: opacity 5s;
-  order: 25;
-  align-self: center;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
 }
 
 .todos-add:hover .todos-add_delete-all {
@@ -120,21 +104,29 @@ textarea {
   position: relative;
   margin-left: 7px;
   width: 80%;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 30px;
-  flex: 1 0;
-  order: 10;
 }
 
-.todos-add_input input::-webkit-input-placeholder {
-  font-family: Helvetica Neue, Arial, sans-serif;
-  font-weight: 100;
+.todos-add_input::-webkit-input-placeholder {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
 }
 
-.todos-add_input input::-moz-placeholder {
-  font-family: Helvetica Neue, Arial, sans-serif;
-  font-weight: 100;
+.todos-add_input::-moz-placeholder {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+}
+
+.todos-add_input::-moz-placeholder {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+}
+
+.todos-add_input:-ms-input-placeholder {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
 }
 
 .todos-add_select-all {
@@ -150,10 +142,10 @@ textarea {
   line-height: 40px;
   min-height: 40px;
   background-color: white;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 2px 3px #cecece;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 15px;
-  box-shadow: 0 2px 3px #cecece;
 }
 
 .todos-actions-bar_filters {
@@ -175,26 +167,26 @@ textarea {
 }
 
 .todos-step1 {
-  margin: auto;
   height: 5px;
   background: white;
   border: solid 1px #e6e6e6;
   box-shadow: 0 3px 5px #cecece;
-  width: 99%;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .todos-step2 {
-  margin: auto;
   height: 4px;
   background: white;
   border: solid 1px #e6e6e6;
   box-shadow: 0 3px 5px #cecece;
-  width: 98%;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 button {
   border: none;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   background-color: white;
 }
@@ -216,11 +208,24 @@ button:hover {
 .todo-item_mark-checkbox {
   position: absolute;
   float: left;
-  z-index: 1;
 }
 
 .todo-item_mark:checked + .todo-item_mark-checkbox {
   border-color: #5dc2af;
   background: url("../images/icons/completed.png") no-repeat center center;
+}
+
+.todos-main {
+  max-height: 80%;
+  width: 560px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.todos-title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 120px;
+  color: #ebdfdf;
 }
 /*# sourceMappingURL=default.css.map */

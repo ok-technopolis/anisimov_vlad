@@ -1,13 +1,19 @@
-@mixin placeholder($font) {
-    input::-webkit-input-placeholder {
-        font-family: $font, Arial, sans-serif;
-        font-weight: 100;
-    }
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    @content
+  }
 
-    input::-moz-placeholder {
-        font-family: $font, Arial, sans-serif;
-        font-weight: 100;
-    }
+  &::-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
 }
 
 

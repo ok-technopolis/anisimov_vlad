@@ -1,0 +1,9 @@
+@import "../../config/globals";
+
+.todos-title{
+  @include priority-font(){
+    font-weight: 100;
+    font-size: $fs_title;
+    color: $c-title;
+  };
+}

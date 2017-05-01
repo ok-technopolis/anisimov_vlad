@@ -1,3 +1,6 @@
-@mixin priority-font($font){
-  font-family: $font, Arial, sans-serif;
+$common-font: "Helvetica Neue", Arial, sans-serif;
+
+@mixin priority-font(){
+  font-family: $common-font;
+  @content;
 }
