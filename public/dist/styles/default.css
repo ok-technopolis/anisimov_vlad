@@ -62,7 +62,7 @@ textarea {
   background: transparent;
   resize: none;
   min-height: 50px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
@@ -76,9 +76,9 @@ textarea {
   padding: 0;
   opacity: 0.2;
   background: transparent url("../images/icons/close.png") no-repeat;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
   order: 26;
   align-self: center;
 }
@@ -103,9 +103,9 @@ textarea {
   background: transparent url("../images/icons/close.png") no-repeat;
   border: none;
   cursor: pointer;
-  -moz-transition: opacity 5s;
-  -o-transition: opacity 5s;
-  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
   order: 25;
   align-self: center;
 }
@@ -120,7 +120,7 @@ textarea {
   position: relative;
   margin-left: 7px;
   width: 80%;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 30px;
   flex: 1 0;
@@ -150,7 +150,7 @@ textarea {
   line-height: 40px;
   min-height: 40px;
   background-color: white;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   font-size: 15px;
   box-shadow: 0 2px 3px #cecece;
@@ -194,7 +194,7 @@ textarea {
 
 button {
   border: none;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 100;
   background-color: white;
 }
